@@ -1,10 +1,11 @@
 import { useState } from "react";
 import ButtonSubmit from './ButtonSubmit';
+import { useNavigate } from 'react-router';
 
 function SubmitEmail ({action, buttonText}) {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -20,6 +21,8 @@ function SubmitEmail ({action, buttonText}) {
       setEmail("")
     }else {
       setErrorMessage("");
+      navigate('/signed-in')
+      localStorage.setItem("email", email);
     }
   };
 
