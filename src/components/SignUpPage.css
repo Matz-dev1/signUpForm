@@ -1,0 +1,95 @@
+.signUpCard {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 20px;
+  padding-top: 3vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-bottom: 2.4vh;
+  gap: 1%;
+}
+
+.leftHalf {
+  width: 47%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.leftHalf h2 {
+  font-size: 3em;
+}
+
+.leftHalf p {
+  margin: 5px 0;
+}
+
+.checkList p {
+  display: flex;
+  align-items: center;
+}
+
+.checkList img {
+  padding-right: 3%;
+  vertical-align: middle;
+}
+
+.submitContainer {
+  margin-top: 20%;
+}
+
+.rightHalf {
+  width: 50%;
+  text-align: end;
+}
+
+.rightHalf img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .signUpCard {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .background {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0; 
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+  .rightHalf {
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+  .rightHalf img {
+    object-fit: cover;
+    height: 40%;
+    border-radius: 0 0 20px 20px;
+  }
+  .leftHalf {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    margin-top: -70%;
+    box-sizing: border-box; 
+    text-align: center; 
+    overflow: hidden;
+  }
+
+}

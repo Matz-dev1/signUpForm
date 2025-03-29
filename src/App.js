@@ -12,7 +12,7 @@ function App() {
           path="/"
           element={
             <SignUpPage
-              action="google.com"
+              
               buttonText="Subscribe to monthly newslatter"
             />
           }
